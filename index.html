@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="text/javascript">
+
+        function changeText() {
+            document.getElementById("status").innerHTML = "clicked";
+        }
+
+        function changeFontSize() {
+            document.getElementById("status").style.fontSize='50px'
+        }
+
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Practice</title>
+</head>
+<body>
+
+<!--<input type="button"-->
+<!--onclick="document.getElementById('paragraph').innerText = Date() " value="click">-->
+
+<p id="status">Unclicked!</p>
+
+<!--<button type="button" onclick="document.getElementById('status').innerHTML = 'clicked'">clickMe</button>-->
+<button type="button" onclick="changeText(); changeFontSize()">click me</button>
+
+<button onclick="document.getElementById('status').style.display = 'none'">hide</button>
+
+<button onclick="document.getElementById('status').style.display ='block'">show</button>
+
+<button onclick="document.getElementById('status').style.fontSize = '25px'">original</button>
+
+<p id="color">This is coloured text and you are seeing the default colour.</p>
+
+<button onclick="changeColor()">change color</button>
+
+<script src="script.js"></script>
+
+<button onclick="document.write('Dhiraj')">Document Write</button>
+<script>
+    document.write("Dhiraj")
+</script>
+<button onclick="window.alert('Dhiraj')">Alert Window</button>
+<!--<script>-->
+<!--    window.alert("Dhiraj")-->
+<!--</script>-->
+<button onclick="console.log('Dhiraj')">Console Log</button>
+
+
+<!--<p id="paragraph"></p>-->
+
+</body>
+</html>
